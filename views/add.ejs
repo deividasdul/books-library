@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/add.css" />
+    <title>Bookify</title>
+  </head>
+</html>
+<body>
+  <h1 id="title">Add a New Book</h1>
+  <form autocomplete="off" class="input-form" method="POST" action="/new-book">
+    <label class="field" for="">Title:</label>
+    <input name="title" class="field" required type="text" />
+    <label class="field" for="">Description:</label>
+    <textarea
+      class="field"
+      required
+      name="description"
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea>
+    <label class="field" for="">ISBN:</label>
+    <input name="isbn" class="field" required type="text" />
+    <button formaction="/new-book" class="submit-btn" type="submit">Add</button>
+  </form>
+  <a class="link" href="/"><button class="back-btn">Back</button></a>
+</body>

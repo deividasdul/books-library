@@ -1,0 +1,19 @@
+{
+  "name": "capstone_postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "pg": "^8.11.3"
+  }
+}

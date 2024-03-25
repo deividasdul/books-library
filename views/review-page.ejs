@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/add.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a class="link" href="/"><button class="back-btn">Back</button></a>
+    <h1>Book Title: <%= book.title %></h1>
+    <div class="image-container">
+      <img
+        class="book-img"
+        src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-L.jpg"
+        alt="book cover image"
+      />
+    </div>
+    <p>My Review: <%= book.review %></p>
+    <p>Book Description: <%=book.short_description %></p>
+  </body>
+</html>

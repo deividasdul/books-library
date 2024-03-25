@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: rgb(20, 20, 20);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-input {
+  width: 70%;
+  text-align: center;
+}
+
+.search-btn {
+  width: 30%;
+}
+
+.search-btn,
+.add-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.search-input,
+.search-btn {
+  float: left;
+  border-bottom-right-radius: 0 !important;
+}
+
+.search-input,
+.add-btn {
+  border-top-right-radius: 0 !important;
+}
+
+.add-btn {
+  width: 30%;
+  background-color: rgb(0, 255, 0);
+  margin-bottom: 50px;
+}
+
+.delete-btn {
+  background-color: rgb(255, 0, 0);
+}
+
+.read-btn,
+.review-btn {
+  background-color: rgb(255, 255, 0);
+}
+
+.search-btn {
+  background-color: aliceblue;
+}
+
+.add-btn,
+.search-btn,
+.read-btn,
+.delete-btn,
+.review-btn {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-input,
+.search-btn,
+.add-btn {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search-input,
+.search-btn,
+.add-btn,
+.delete-btn,
+.read-btn,
+.review-btn {
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.read-btn,
+.review-btn,
+.delete-btn {
+  width: 150px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+/* .read-btn:hover {
+  background-color: rgb(0, 0, 255);
+  color: yellow;
+} */
+
+.review-btn {
+  background-color: blue;
+  color: yellow;
+}
+
+/* .review-btn:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+.delete-btn:hover {
+  background-color: rgb(0, 255, 255);
+  color: red;
+}
+
+.add-btn:hover {
+  background-color: rgb(255, 0, 255);
+  color: rgb(0, 255, 0);
+}
+
+.search-btn:hover {
+  background-color: hsla(28, 100%, 97%, 0.5);
+  color: aliceblue;
+} */
+
+.sidebar {
+  width: 10%;
+  height: 25vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 25%;
+  left: 12%;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+nav {
+  text-align: center;
+}
+
+.add-btn-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#book-title {
+  font-size: 32px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+}
+
+.book-description {
+  font-size: 16px;
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  position: relative;
+}
+
+.book {
+  width: 50%;
+  margin: auto;
+}
+
+.flex-dates {
+  display: flex;
+  margin: 10px 0;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+.date-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
+}
+
+.date-left {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0.5;
+}
+
+.read-delete {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.book-cover {
+  margin: 10px 0;
+}
+
+.show-btn {
+  background-color: rgb(255, 255, 0) !important;
+  color: black;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}

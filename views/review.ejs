@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/add.css" />
+    <title>Bookify</title>
+  </head>
+  <body>
+    <h1 id="title">Write a Review</h1>
+    <form
+      autocomplete="off"
+      class="input-form"
+      method="POST"
+      action="/new-review/<%= id %>"
+    >
+      <label class="field" for="">Review:</label>
+      <textarea
+        class="field"
+        required
+        name="review"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <label for="">Rating (1-5):</label>
+      <div class="radio-select">
+        <input checked type="radio" value="1" name="rating" id="" />
+        <input type="radio" value="2" name="rating" id="" />
+        <input type="radio" value="3" name="rating" id="" />
+        <input type="radio" value="4" name="rating" id="" />
+        <input type="radio" value="5" name="rating" id="" />
+      </div>
+      <label for="">Started reading:</label>
+      <input type="date" name="start" id="" />
+      <label for="">Finished reading:</label>
+      <input type="date" name="end" id="" />
+      <input name="bookId" value="<%= id %>" type="hidden" />
+      <button class="submit-btn" type="submit">Leave a Review</button>
+    </form>
+    <a class="link" href="/"><button class="back-btn">Back</button></a>
+  </body>
+</html>
